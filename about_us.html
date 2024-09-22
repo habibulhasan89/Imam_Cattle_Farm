@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="icon" href="logo.jpg" type="image/x-icon">
+
+
+
+    <title>Dairy Farm</title>
+    <style>
+      /* Navbar background color */
+.navbar {
+    background-color: #D7E9FF; /* Dark blue background */
+}
+#navbarNav a {
+    color: #000080;
+    font-size: 1.1rem;
+}
+
+/* Navbar link color */
+.navbar-nav .nav-link {
+    color: #000080;
+}
+
+/* Navbar link color on hover */
+.navbar-nav .nav-link:hover {
+    color: #000080;
+}
+
+/* Toggler button border color */
+.navbar-toggler {
+    border-color: #000080;
+}
+
+/* Toggler icon color */
+.navbar-toggler-icon {
+    background-color: transparent;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #D7E9FF; /* White color for the toggler lines */
+    position: absolute;
+    left: 0;
+}
+
+.navbar-toggler-icon::before {
+    top: 7px;
+}
+
+.navbar-toggler-icon::after {
+    top: 12px;
+}
+
+/* Optional: Adjusting active link color if needed */
+.navbar-nav .nav-link.active {
+    color: #000080;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto; 
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.social a {
+    color: #000080;
+    text-decoration: none;
+}
+
+.background-image {
+    background: url('image_aboutus.jpg') no-repeat center/cover;
+    height: auto; /* Changed to auto */
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.text-section {
+    flex: 1; /* Allowing it to shrink */
+    color: white;
+    padding: 20px;
+}
+
+.text-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.image-section {
+    flex: 1; /* Allowing it to shrink */
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section {
+        width: 80%;
+    }
+
+    .image-section {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .text-section h1 {
+        font-size: 2rem;
+    }
+
+    .text-section p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-section p {
+        font-size: 0.9rem;
+    }
+}
+
+.about-us-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .about-item {
+        flex-direction: column;
+    }
+
+    .text-section h2, .text-section p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .text-section h2, .text-section p {
+        font-size: 1.2rem;
+    }
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.jpg" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="pakages.html">PACKAGES</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="contact_us.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<br>
+        <!-- Aboutus  -->
+        <div class="background-image">
+          <div class="overlay"></div>
+          <div class="content">
+              <div class="image-section">
+                  <img src="backgroundimagewithdim_aboutus.jpg" alt="Left Image">
+              </div>
+              <div class="text-section">
+                  <h1>Facilities and Management at IMAM Cattle Farm </h1>
+                  <p>At IMAM Cattle Farm, we are committed to ensuring the highest standards of care for our livestock, backed by state-of-the-art facilities and expert management practices. Our dedication to quality is reflected in every aspect of our operations, ensuring the health and well-being of our cattle and the efficiency of our production.</p>
+        
+              </div>
+          </div>
+      </div>
+      <br>
+      <div class="about-us-section">
+
+        <!-- Section 1 -->
+        <div class="about-item">
+            <div class="text-section">
+                
+                <p style="font-size: 1.2rem; margin-bottom: 20px; color: #000080;">At IMAM Cattle Farm, we pride ourselves on offering top-notch facilities and expert management to ensure the well-being and productivity of our cattle. Our spacious, well-ventilated barns provide a comfortable environment with climate control systems that maintain optimal temperatures year-round. Cleanliness is a priority, and we enforce strict hygiene practices to keep the barns sanitized and disease-free. Nutritional management is another cornerstone of our operations. Our cattle are provided with high-quality, nutrient-rich feed formulated by professional nutritionists, alongside constant access to clean, fresh water through automated systems. We also maintain extensive grazing pastures where the cattle can roam freely and enjoy natural grazing, promoting both their physical health and mental well-being.</p>
+            </div>
+            <div class="image-section">
+                <img src="aboutus_info.png" alt="Introduction Image">
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="about-item">
+            <div class="text-section">
+                <p style="font-size: 1.2rem; margin-bottom: 20px; color: #000080;">Health care is a critical component of our farm's management. We employ experienced veterinarians who conduct regular health checkups, administer vaccinations, and provide treatments to ensure our livestock remain in peak condition. Our strict biosecurity measures further safeguard the herd from diseases. Waste management is handled responsibly, with manure being recycled into organic fertilizer, supporting sustainable farming practices and minimizing our environmental footprint. In addition to this, our selective breeding programs are designed to enhance the genetic quality of our cattle, resulting in healthier, more productive animals. Our specialized calf-rearing facilities ensure that newborn calves receive the best care possible, fostering strong and healthy development from birth.</p>
+            </div>
+            <div class="image-section">
+                <img src="farm_management.jpg" alt="Introduction Image">
+            </div>
+        </div>
+        <!-- Section 3 -->
+        <div class="about-item">
+            <div class="text-section">
+                <p style="font-size: 1.2rem; margin-bottom: 20px; color: #000080;">Technology plays a vital role in our farm’s operations. We use farm management software to monitor the health, nutrition, and productivity of each animal, enabling us to make informed decisions that optimize efficiency. Automated systems for feeding and milking further streamline our processes, ensuring consistent and high-quality care for our cattle. Through this combination of modern technology, expert management, and a deep commitment to the well-being of our livestock, LMAM Cattle Farm stands as a leader in sustainable and innovative cattle farming.</p>
+            </div>
+            <div class="image-section">
+                <img src="farm_operation.jpeg" alt="Management Practices">
+            </div>
+        </div>
+
+    </div>
+         
+     <!-- Footer Section -->
+<!-- Footer Section -->
+<footer style="color: #000080; background-color: #D7E9FF; padding: 20px; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+
+      <!-- Logo Image -->
+
+
+      <div style="flex: 3;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+          <!-- About Us -->
+          <div style="flex: 1; margin: 10px;">
+            <h3>About Us</h3>
+            <p>At IMAM’S CATTLE, we prioritize the well-being of your animals with the utmost care and dedication. Our
+              experienced team provides attentive, personalized care to each animal, ensuring their health and comfort.
+              We feed them a carefully formulated diet designed to promote optimal growth and vitality. Our commitment
+              to quality extends to every aspect of their care, from their diet to their living conditions.</p>
+          </div>
+
+
+
+          <!-- Contact Info -->
+          <div style="flex: 1; margin: 10px;">
+            <h3>Contact Us</h3>
+            <p><strong>Email:</strong> info@imamcattle.com</p>
+            <p><strong>Phone:</strong> +923006786078</p>
+            <p><strong>Address:</strong> Imam's Cattle Farm Address: Main Hasilpur Road Near Islamia University
+              Bahawalpur</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div style="flex: 1; margin: 10px;" class="social">
+            <h3>Explore</h3>
+            <ul style="list-style-type: none; padding: 0;">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="pakages.html">Packages</a></li>
+              <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Social Media Links -->
+        <div class="social">
+          <a href="#" style="margin: 0 10px;"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a> <br>
+          <a href="#" style="margin: 0 10px;"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a> <br>
+          <a href="#" style="margin: 0 10px;"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a> <br>
+          <a href="#" style="margin: 0 10px;"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+        </div>
+
+
+        
+      </div>
+    </div>
+    <div style="flex: 1; text-align: right;">
+      <img src="logo.jpg" alt="Imam Cattle Farm Logo" width="100px" height="auto">
+    </div>
+    <!-- Copyright -->
+    <div style="margin-top: 20px; font-size: 14px;">
+      <p><strong> &copy; 2024 Imam Cattle Farm. All Rights Reserved.</strong></p>
+    </div>
+  </footer>
+    
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

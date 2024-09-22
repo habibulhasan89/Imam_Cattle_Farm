@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="icon" href="logo.jpg" type="image/x-icon">
+
+
+
+  <title>Dairy Farm</title>
+  <style>
+    /* Navbar background color */
+    .navbar {
+      background-color: #D7E9FF;
+      /* Dark blue background */
+    }
+
+    #navbarNav a {
+      color: #000080;
+      font-size: 1.1rem;
+    }
+
+    /* Navbar link color */
+    .navbar-nav .nav-link {
+      color: #000080;
+      /* White color for navbar links */
+    }
+
+    /* Navbar link color on hover */
+    .navbar-nav .nav-link:hover {
+      color: #000080;
+      /* White color for navbar links on hover */
+    }
+
+    /* Toggler button border color */
+    .navbar-toggler {
+      border-color: #000080;
+      /* White border for toggler button */
+
+    }
+
+    /* Toggler icon color */
+    .navbar-toggler-icon {
+      background-color: transparent;
+      /* Transparent background for the toggler icon */
+
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: #D7E9FF;
+      /* White color for the toggler lines */
+      position: absolute;
+      left: 0;
+      color: #000080;
+    }
+
+    .navbar-toggler-icon::before {
+      top: 7px;
+      /* Position of the first line */
+    }
+
+    .navbar-toggler-icon::after {
+      top: 12px;
+      /* Position of the second line */
+    }
+
+    /* Additional style for the toggler lines */
+    .navbar-toggler-icon {
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+    }
+
+
+
+
+    /* Optional: Adjusting active link color if needed */
+    .navbar-nav .nav-link.active {
+      color: #000080;
+      /* White color for the active navbar link */
+    }
+
+    .navbar-brand img {
+      width: 100px;
+      height: auto;
+    }
+
+    .carousel-item img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      /* Ensures image fits without distortion */
+    }
+
+    .social a {
+      color: #000080;
+      text-decoration: none;
+    }
+
+     /* Ensure form and image card have the same height */
+  #contactus .col-md-6 {
+    height: 100%;
+  }
+
+  #contact-form, .right-section img {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Add padding and consistent height for the form and the image */
+  #contact-form {
+    padding: 20px;
+    background-image: url('contactform2.jpg');
+    background-size: cover;
+    border: 1px solid #555353;
+    box-sizing: border-box;
+  }
+
+  /* Adjust the card image to match the form's dimensions */
+  .right-section img {
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+  }
+
+  /* Ensure the form is responsive */
+  @media (min-width: 768px) {
+    #contactus .col-md-6 {
+      height: auto;
+    }
+  }
+
+  /* Responsive form layout */
+  #contactus {
+    background-color: #D7E9FF;
+    color: #000080;
+  }
+ 
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.jpg" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="about_us.html">ABOUT US</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="pakages.html">PACKAGES</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <!-- <div class="contact-container">
+
+      <form class="contact-form">
+          <h2>Contact Us</h2>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" rows="5" placeholder="Write a Message" required></textarea>
+          <button type="submit">Send Message</button>
+      </form>
+     
+</div> -->
+  <div id="contactus" style="margin-top:10px;">
+    <h1 style="font-size:40px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;text-align:center;">
+      Contact Us</h1>
+    <div class="container mt-1 tank">
+      <div class="row gx-3 gy-3">
+        <div class="col-md-6">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="name">Password</label>
+              <input type="password" class="form-control" id="name" placeholder="Enter your password" required>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="name">Phone no</label>
+              <input type="number" class="form-control" id="name" placeholder="Enter your Phone no" required>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <br>
+              <textarea class="form-control from" id="message" rows="4" placeholder="Describe your problem.."
+                required></textarea>
+            </div>
+            <br>
+
+            <button id="submit-button" type="submit" class="btn btn-primary"
+              style="background-color: #D7E9FF; color: #000080;">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img src="contactus_card.png" width="100%" height="90%" style="border:1px solid #ddd;margin-top:10px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+<!-- Footer Section -->
+<footer style="color: #000080; background-color: #D7E9FF; padding: 20px; text-align: center;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+
+    <!-- Logo Image -->
+
+
+    <div style="flex: 3;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        <!-- About Us -->
+        <div style="flex: 1; margin: 10px;">
+          <h3>About Us</h3>
+          <p>At IMAM’S CATTLE, we prioritize the well-being of your animals with the utmost care and dedication. Our
+            experienced team provides attentive, personalized care to each animal, ensuring their health and comfort.
+            We feed them a carefully formulated diet designed to promote optimal growth and vitality. Our commitment
+            to quality extends to every aspect of their care, from their diet to their living conditions.</p>
+        </div>
+
+
+
+        <!-- Contact Info -->
+        <div style="flex: 1; margin: 10px;">
+          <h3>Contact Us</h3>
+          <p><strong>Email:</strong> info@imamcattle.com</p>
+          <p><strong>Phone:</strong> +923006786078</p>
+          <p><strong>Address:</strong> Imam's Cattle Farm Address: Main Hasilpur Road Near Islamia University
+            Bahawalpur</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div style="flex: 1; margin: 10px;" class="social">
+          <h3>Explore</h3>
+          <ul style="list-style-type: none; padding: 0;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="pakages.html">Packages</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- Social Media Links -->
+      <div class="social">
+        <a href="#" style="margin: 0 10px;"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a> <br>
+        <a href="#" style="margin: 0 10px;"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a> <br>
+        <a href="#" style="margin: 0 10px;"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a> <br>
+        <a href="#" style="margin: 0 10px;"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+      </div>
+
+
+      
+    </div>
+  </div>
+  <div style="flex: 1; text-align: right;">
+    <img src="logo.jpg" alt="Imam Cattle Farm Logo" width="100px" height="auto">
+  </div>
+  <!-- Copyright -->
+  <div style="margin-top: 20px; font-size: 14px;">
+    <p><strong> &copy; 2024 Imam Cattle Farm. All Rights Reserved.</strong></p>
+  </div>
+</footer>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

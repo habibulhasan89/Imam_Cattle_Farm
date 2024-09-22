@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="icon" href="logo.jpg" type="image/x-icon">
+
+  <title>Dairy Farm</title>
+  <style>
+    /* Navbar background color */
+    .navbar {
+      background-color: #D7E9FF;
+      /* Dark blue background */
+    }
+
+    #navbarNav a {
+      color: #000080;
+      font-size: 1.1rem;
+    }
+
+    /* Navbar link color */
+    .navbar-nav .nav-link {
+      color: #D7E9FF;
+      /* White color for navbar links */
+    }
+
+    /* Navbar link color on hover */
+    .navbar-nav .nav-link:hover {
+      color: #D7E9FF;
+      /* White color for navbar links on hover */
+    }
+
+    /* Toggler button border color */
+    .navbar-toggler {
+      border-color: #000080;
+      /* White border for toggler button */
+
+    }
+
+    /* Toggler icon color */
+    .navbar-toggler-icon {
+      background-color: transparent;
+      /* Transparent background for the toggler icon */
+
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: #D7E9FF;
+      /* White color for the toggler lines */
+      position: absolute;
+      left: 0;
+      color: #000080;
+    }
+
+    .navbar-toggler-icon::before {
+      top: 7px;
+      /* Position of the first line */
+    }
+
+    .navbar-toggler-icon::after {
+      top: 12px;
+      /* Position of the second line */
+    }
+
+    /* Additional style for the toggler lines */
+    .navbar-toggler-icon {
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+    }
+
+
+
+
+    /* Optional: Adjusting active link color if needed */
+    .navbar-nav .nav-link.active {
+      color: #fff;
+      /* White color for the active navbar link */
+    }
+
+    .navbar-brand img {
+      width: 100px;
+      height: auto;
+    }
+
+    .carousel-item img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      /* Ensures image fits without distortion */
+    }
+
+    .bull-image-container img {
+      max-width: 100%;
+      height: auto;
+      max-height: 400px;
+      /* Adjust this value as needed */
+    }
+
+    .text-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    /* card */
+    .card {
+      margin: 15px;
+    }
+
+    .card-img-top {
+      height: 200px;
+      /* Adjust height as needed */
+      object-fit: cover;
+      /* Ensures image fits within card */
+    }
+
+    .card-body {
+      text-align: center;
+      /* Center text and button */
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      /* Adjust heading size as needed */
+    }
+
+    .card-text {
+      font-size: 1rem;
+      /* Adjust paragraph size as needed */
+    }
+
+    .social a {
+      color: #000080;
+      text-decoration: none;
+    }
+
+    .why-choose-us {
+      position: relative;
+      width: 100%;
+      height: auto;
+      color: #fff;
+    }
+    /* Container for the background image */
+    .background-section {
+      position: relative;
+      background-image: url('background_3.jpg'); /* Add your background image URL here */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Overlay to create dim effect */
+    .background-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    }
+
+    /* Content over the background */
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    /* Optional: Customize button */
+    .btn-custom {
+      background-color: #D7E9FF;
+      color: #000080;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+
+    .btn-custom:hover {
+      background-color: #000080;
+      color: #ffffff;
+    }
+    
+  </style>
+
+  </style>
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.jpg" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="about_us.html">ABOUT US</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="pakages.html">PACKAGES</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="contact_us.html">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Slider -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="slider1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="slider2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Text and Image Section -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6 text-container">
+        <div>
+          <h2 style="font-size: 3rem;">Welcome to <span style="color: #000080;">Our Farm!</span></h2>
+          <p>At <span style="color: #000080;">IMAM’S CATTLE</span>, we prioritize the well-being of your animals with
+            the utmost care and dedication. Our experienced team provides attentive, personalized care to each animal,
+            ensuring their health and comfort. We feed them a carefully formulated diet designed to promote optimal
+            growth and vitality. Our commitment to quality extends to every aspect of their care, from their diet to
+            their living conditions. Trust us to nurture your cattle with the highest level of concentration and
+            expertise. With <span style="color: #000080;">IMAM’S CATTLE</span>, you can be assured that your animals are
+            in the best hands, receiving the attention and care they deserve. Your satisfaction is our top priority, and
+            we are dedicated to exceeding your expectations.</p>
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="bull-image-container">
+          <img src="bull_pic.png" alt="Bull">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card  -->
+  <div class="container">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="card_3.jpeg" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Our Dairy Farms</h5>
+            <p class="card-text">This is a brief description about the first image. It provides some context or details.
+            </p>
+            <a href="#" class="btn btn-primary" style="background-color: #D7E9FF; color: #000080;">Button 1</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="card4.jpg" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Meet Our Cows</h5>
+            <p class="card-text">This is a brief description about the second image. It provides some context or
+              details.</p>
+            <a href="#" class="btn btn-primary" style="background-color: #D7E9FF; color: #000080;">Button 2</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="card5.jpg" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Our Organic Food</h5>
+            <p class="card-text">This is a brief description about the third image. It provides some context or details.
+            </p>
+            <a href="#" class="btn btn-primary" style="background-color: #D7E9FF; color: #000080;">Button 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+  <!-- Background Section -->
+  <section class="background-section">
+    <div class="background-overlay"></div>
+    <div class="content">
+      <h1 class="display-4" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Why Choose Us?</h1>
+      <p class="lead">At IMAM’S CATTLE, we go above and beyond to ensure the health and well-being of our livestock.
+        Our dedicated team provides personalized care, proper nutrition, and clean living conditions for every animal.
+        We believe in sustainable farming practices and work tirelessly to maintain the highest standards for your
+        satisfaction.</p>
+      <a href="store_locator.html" class="btn btn-custom">Visit Our Farm</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer style="color: #000080; background-color: #D7E9FF; padding: 20px; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+
+      <!-- Logo Image -->
+
+
+      <div style="flex: 3;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+          <!-- About Us -->
+          <div style="flex: 1; margin: 10px;">
+            <h3>About Us</h3>
+            <p>At IMAM’S CATTLE, we prioritize the well-being of your animals with the utmost care and dedication. Our
+              experienced team provides attentive, personalized care to each animal, ensuring their health and comfort.
+              We feed them a carefully formulated diet designed to promote optimal growth and vitality. Our commitment
+              to quality extends to every aspect of their care, from their diet to their living conditions.</p>
+          </div>
+
+
+
+          <!-- Contact Info -->
+          <div style="flex: 1; margin: 10px;">
+            <h3>Contact Us</h3>
+            <p><strong>Email:</strong> info@imamcattle.com</p>
+            <p><strong>Phone:</strong> +923006786078</p>
+            <p><strong>Address:</strong> Imam's Cattle Farm Address: Main Hasilpur Road Near Islamia University
+              Bahawalpur</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div style="flex: 1; margin: 10px;" class="social">
+            <h3>Explore</h3>
+            <ul style="list-style-type: none; padding: 0;">
+              <li><a href="#">Home</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="pakages.html">Packages</a></li>
+              <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Social Media Links -->
+        <div class="social">
+          <a href="#" style="margin: 0 10px;"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a> <br>
+          <a href="#" style="margin: 0 10px;"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a> <br>
+          <a href="#" style="margin: 0 10px;"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a> <br>
+          <a href="#" style="margin: 0 10px;"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+        </div>
+
+
+        
+      </div>
+    </div>
+    <div style="flex: 1; text-align: right;">
+      <img src="logo.jpg" alt="Imam Cattle Farm Logo" width="100px" height="auto">
+    </div>
+    <!-- Copyright -->
+    <div style="margin-top: 20px; font-size: 14px;">
+      <p><strong> &copy; 2024 Imam Cattle Farm. All Rights Reserved.</strong></p>
+    </div>
+  </footer>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
